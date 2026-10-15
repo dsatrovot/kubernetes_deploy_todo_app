@@ -1,0 +1,11 @@
+services:
+  frontend:
+    image: todo-frontend:2.0
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+  backend:
+    image: todo-backend:3.0
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
